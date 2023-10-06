@@ -11,9 +11,9 @@ NODE_VERSION="PLACEHOLDER_NODE"
 # Then perform replacements in the files based on local variables
 
 # Edit the package.json file
-sed -i.mybak "s/\([\/\"]\)(PLACEHOLDER_GITHUB_USER)/$GITHUB_USER/g" package.json
 sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" package.json
 sed -i.mybak "s/PLACEHOLDER_NODE/$NODE_VERSION/g" package.json
+sed -i.mybak "s/PLACEHOLDER_REPO_NAME/$REPO_NAME/g" package.json
 
 # Edit the ./.nvmrc file
 sed -i.mybak "s/PLACEHOLDER_NODE/$NODE_VERSION/g" .nvmrc
@@ -29,12 +29,8 @@ sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" .github/workflows/pr.yml
 
 # Edit the README.md file
 sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" README.md
-
-# Additionally, edit files to replace types and repository name
-sed -i.mybak "s/PLACEHOLDER_REPO_NAME/$REPO_NAME/g" package.json README.md
-
-# Replace the name "Ryan Sonshine" with the full name
-sed -i.mybak "s/PLACEHOLDER_FULL_NAME/$FULL_NAME/g" package.json README.md
+sed -i.mybak "s/PLACEHOLDER_REPO_NAME/$REPO_NAME/g" README.md
+sed -i.mybak "s/PLACEHOLDER_FULL_NAME/$FULL_NAME/g" README.md
 
 rm *.mybak
 rm .*.mybak
