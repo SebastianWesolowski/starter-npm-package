@@ -1,0 +1,8 @@
+src/types/global.d.ts
+node_modules
+distTS
+lib/*
+*.scss
+.eslintrc.js
+.storybook/**
+dist/*
