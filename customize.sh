@@ -37,6 +37,8 @@ sed -i.mybak "s/REPO_NAME/$REPO_NAME/g" package.json README.md
 sed -i.mybak "s/PLACEHOLDER_FULL_NAME/$FULL_NAME/g" package.json README.md
 
 rm *.mybak
+rm .*.mybak
+rm ./.github/workflows/*.mybak
 
 # Display a message upon completion
 echo "Finished editing files."
