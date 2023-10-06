@@ -29,6 +29,7 @@ Replace `FULL_NAME`, `GITHUB_USER`, `NODE_VERSION` and `REPO_NAME` in the `./cus
 FULL_NAME="John Smith"
 GITHUB_USER="johnsmith"
 REPO_NAME="my-cool-package"
+NODE_VERSION="18.17.1"
 ```
 Add permission to edit `chmod +x ./customize.sh` and rund it `./customize.sh` 
 
