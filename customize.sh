@@ -22,13 +22,13 @@ sed -i.mybak "s/PLACEHOLDER_NODE/$NODE_VERSION/g" .nvmrc
 sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" .github/workflows/codeql-analysis.yml
 
 # Edit the .github/workflows/relese.yml file
-sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" .github/workflows/relese.yml
+sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" .github/workflows/release.yml
 
 # Edit the .github/workflows/pr.yml file
 sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" .github/workflows/pr.yml
 
 # Edit the README.md file
-sed -i.mybak "s/\([\/\"]\)(PLACEHOLDER_GITHUB_USER)/$GITHUB_USER/g" README.md
+sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" README.md
 
 # Additionally, edit files to replace types and repository name
 sed -i.mybak "s/PLACEHOLDER_REPO_NAME/$REPO_NAME/g" package.json README.md
