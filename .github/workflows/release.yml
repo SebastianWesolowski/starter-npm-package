@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: lts/*
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile --ignore-scripts  --omit=dev
       - name: Build
         run: yarn build
       - name: Test
@@ -28,6 +28,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn semantic-release
+        run: npx semantic-release
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v3.1.0

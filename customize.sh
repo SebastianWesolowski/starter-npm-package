@@ -14,7 +14,7 @@ NODE_VERSION="PLACEHOLDER_NODE"
 sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" package.json
 sed -i.mybak "s/PLACEHOLDER_NODE/$NODE_VERSION/g" package.json
 sed -i.mybak "s/PLACEHOLDER_REPO_NAME/$REPO_NAME/g" package.json
-sed -i.mybak "s/PLACEHOLDER_FULL_NAME/$FULL_NAME/g" package.json
+
 # Edit the ./.nvmrc file
 sed -i.mybak "s/PLACEHOLDER_NODE/$NODE_VERSION/g" .nvmrc
 
@@ -22,7 +22,6 @@ sed -i.mybak "s/PLACEHOLDER_NODE/$NODE_VERSION/g" .nvmrc
 sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" README.md
 sed -i.mybak "s/PLACEHOLDER_REPO_NAME/$REPO_NAME/g" README.md
 sed -i.mybak "s/PLACEHOLDER_FULL_NAME/$FULL_NAME/g" README.md
-
 
 rm *.mybak
 rm .*.mybak

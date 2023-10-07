@@ -33,9 +33,9 @@ NODE_VERSION="18.17.1"
 ```
 Add permission to edit `chmod +x ./customize.sh` and rund it `./customize.sh` 
 
-### Add NPM Token
+### Add Tokens for NPM(**Automation**), Github, CodeCov
 
-Add your npm token to your GitHub repository secrets as `NPM_TOKEN`.
+Add your npm token to your GitHub repository secrets as `NPM_TOKEN`, `GH_TOKEN` and `CODECOV_TOKEN`
 
 ### Add Codecov integration
 

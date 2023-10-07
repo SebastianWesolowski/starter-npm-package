@@ -12,7 +12,6 @@
     "cm": "cz",
     "lint": "eslint ./src/ --fix",
     "prepare": "husky install",
-    "semantic-release": "semantic-release",
     "test:watch": "jest --watch",
     "test": "jest --coverage",
     "typecheck": "tsc --noEmit"
@@ -61,6 +60,8 @@
     "jest": "^27.2.0",
     "lint-staged": "^13.2.1",
     "prettier": "^2.2.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "semantic-release": "^21.0.1",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
@@ -115,8 +116,18 @@
           }
         }
       ],
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
       "@semantic-release/npm",
-      "@semantic-release/github"
+      "@semantic-release/github",
+      ["@semantic-release/git", {
+        "assets": ["lib/**/*.{js,ts,d.ts}","package.json", "CHANGELOG.md"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }]
     ]
   }
 }
