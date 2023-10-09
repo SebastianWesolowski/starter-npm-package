@@ -11,10 +11,24 @@
     "clean": "rm -rf ./lib/",
     "cm": "cz",
     "lint": "eslint ./src/ --fix",
-    "prepare": "husky install",
     "test:watch": "jest --watch",
     "test": "jest --coverage",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "husky:prepare-commit-msg": "exec < /dev/tty && node_modules/.bin/git-cz --hook || true",
+    "husky:pre-commit": "lint-staged -c ./.husky/lint-staged.config.json",
+    "husky:pre-push": "run-s lint quality:check:* build:prod",
+    "husky:commit-msg": "commitlint --edit $GIT_PARAMS",
+    "prepare": "husky install",
+    "inprogres:start": "--------------",
+    "quality:check:type": "echo quality:check:type",
+    "build:prod": "echo build:prod",
+    "staged:style:fix": "echo staged:style:fix",
+    "staged:format:fix": "echo staged:format:fix",
+    "staged:lint:fix": "echo staged:lint:fix",
+    "staged:style:check": "echo staged:style:check",
+    "staged:format:check": "echo staged:format:check",
+    "staged:lint:check": "echo staged:lint:check",
+    "inprogres:end": "--------------"
   },
   "repository": {
     "type": "git",
@@ -27,7 +41,7 @@
     "url": "https://github.com/PLACEHOLDER_GITHUB_USER"
   },
   "engines": {
-    "node": ">=PLACEHOLDER_NODE"
+    "node": ">=18.18.0"
   },
   "keywords": [
     "boilerplate",
@@ -46,22 +60,23 @@
   "homepage": "https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME#readme",
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",
-    "@ryansonshine/cz-conventional-changelog": "^3.3.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/jest": "^27.5.2",
     "@types/node": "^12.20.11",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
+    "commitizen": "^4.3.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "git-cz": "^4.9.0",
     "husky": "^6.0.0",
     "jest": "^27.2.0",
     "lint-staged": "^13.2.1",
     "prettier": "^2.2.1",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
     "semantic-release": "^21.0.1",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
@@ -69,7 +84,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
+      "path": "git-cz"
     }
   },
   "lint-staged": {
@@ -124,10 +139,17 @@
       ],
       "@semantic-release/npm",
       "@semantic-release/github",
-      ["@semantic-release/git", {
-        "assets": ["lib/**/*.{js,ts,d.ts}","package.json", "CHANGELOG.md"],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }]
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "lib/**/*.{js,ts,d.ts}",
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
     ]
   }
 }

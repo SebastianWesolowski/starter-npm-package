@@ -1,47 +1,6 @@
-# PLACEHOLDER_REPO_NAME
+--- 
 
-> Template to kickstart creating a Node.js module using TypeScript and VSCode
-
-Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-module-boilerplate)
-
-## Features
-
-- [Semantic Release](https://github.com/semantic-release/semantic-release)
-- [Issue Templates]
-- [GitHub Actions]
-- [Codecov](https://about.codecov.io/)
-- [VSCode Launch Configurations]
-- [TypeScript](https://www.typescriptlang.org/)
-- [Husky](https://github.com/typicode/husky)
-- [Lint Staged](https://github.com/okonet/lint-staged)
-- [Commitizen](https://github.com/search?q=commitizen)
-- [Jest](https://jestjs.io/)
-- [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-
-## Getting started
-
-### Set up your repository
-
-Replace `FULL_NAME`, `GITHUB_USER`, `NODE_VERSION` and `REPO_NAME` in the `./customize.sh` script with your own details to personalize your new package: 
-
-```bash
-FULL_NAME="John Smith"
-GITHUB_USER="johnsmith"
-REPO_NAME="my-cool-package"
-NODE_VERSION="18.17.1"
-```
-Add permission to edit `chmod +x ./customize.sh` and rund it `./customize.sh` 
-
-### Add Tokens for NPM(**Automation**), Github, CodeCov
-
-Add your npm token to your GitHub repository secrets as `NPM_TOKEN`, `GH_TOKEN` and `CODECOV_TOKEN`
-
-### Add Codecov integration
-
-Enable the Codecov GitHub App [here](https://github.com/apps/codecov).
-
-**Remove everything from here and above**
+Remove after first publish [Set up your repository](docs/HowToAutoDeploy.md)
 
 ---
 
