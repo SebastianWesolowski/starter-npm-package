@@ -13,7 +13,7 @@ NPM_USER="PLACEHOLDER_NPM_USER"
 
 # Edit the package.json file
 sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" package.json
-sed -i.mybak "s/PLACEHOLDER_NODE/$NODE_VERSION/g" package.json
+sed -i.mybak "s/18.18.0/$NODE_VERSION/g" package.json
 sed -i.mybak "s/PLACEHOLDER_REPO_NAME/$REPO_NAME/g" package.json
 sed -i.mybak "s/PLACEHOLDER_FULL_NAME/$FULL_NAME/g" package.json
 

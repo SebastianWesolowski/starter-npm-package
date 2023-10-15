@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4e43c6-098c-4bad-9845-8c2c513c32cc" name="Changes" comment="improve">
-      <change afterPath="$PROJECT_DIR$/.husky/lint-staged.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.husky/post-merge" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.husky/pre-push" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/changelog.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commitlint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/HowToAutoDeploy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/gh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/npm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.husky/pre-commit" beforeDir="false" afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.husky/prepare-commit-msg" beforeDir="false" afterPath="$PROJECT_DIR$/.husky/prepare-commit-msg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/nodejs.version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.releaserc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customize.sh" beforeDir="false" afterPath="$PROJECT_DIR$/customize.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +42,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sebastian/web/@s-starters/starter-npm-package/.husky&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sebastian/web/@s-starters/starter-npm-package&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -62,10 +53,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/.husky" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.github/workflows" />
+      <recent name="$PROJECT_DIR$/.husky" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github" />
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
@@ -102,6 +95,9 @@
       <workItem from="1696695391932" duration="2622000" />
       <workItem from="1696699523083" duration="14000" />
       <workItem from="1696701682044" duration="5762000" />
+      <workItem from="1697282171998" duration="394000" />
+      <workItem from="1697282811111" duration="3166000" />
+      <workItem from="1697370132444" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="improve">
       <option name="closed" value="true" />
