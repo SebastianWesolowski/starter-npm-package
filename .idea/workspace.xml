@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4e43c6-098c-4bad-9845-8c2c513c32cc" name="Changes" comment="improve">
-      <change afterPath="$PROJECT_DIR$/.github/nodejs.version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.releaserc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.stylelintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.stylelintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/media-breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/tailwind.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/utils.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/transform-browser-list/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.husky/lint-staged.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.husky/lint-staged.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customize.sh" beforeDir="false" afterPath="$PROJECT_DIR$/customize.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changelog.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/changelog.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commitlint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/commitlint.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +47,25 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sebastian/web/@s-starters/starter-npm-package&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/sebastian/web/@s-starters/starter-npm-package/node_modules/typescript/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/sebastian/web/@s-starters/starter-npm-package",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/sebastian/web/@s-starters/starter-npm-package/node_modules/typescript/lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/.github/workflows" />
       <recent name="$PROJECT_DIR$/.husky" />
     </key>
@@ -97,7 +109,7 @@
       <workItem from="1696701682044" duration="5762000" />
       <workItem from="1697282171998" duration="394000" />
       <workItem from="1697282811111" duration="3166000" />
-      <workItem from="1697370132444" duration="676000" />
+      <workItem from="1697370132444" duration="3880000" />
     </task>
     <task id="LOCAL-00001" summary="improve">
       <option name="closed" value="true" />
