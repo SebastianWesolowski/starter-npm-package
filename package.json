@@ -40,7 +40,7 @@
     "quality:check:type": "echo quality:check:type",
     "staged:style:check": "stylelint \"*.+(css|scss|sass)\" --allow-empty-input",
     "staged:style:fix": "yarn style:check --fix",
-    "staged:format:check": "prettier --check --ignore-unknown",
+    "staged:format:check": "npm run format:check",
     "staged:format:fix": "yarn format:fix",
     "staged:lint:check": "eslint --config .eslintrc.js",
     "staged:lint:fix": "yarn lint:check --fix",
