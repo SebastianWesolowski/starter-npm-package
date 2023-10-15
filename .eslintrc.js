@@ -1,21 +1,14 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require('fs');
+
 module.exports = {
-  root: true,
-  parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'node', 'prettier'],
-  parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
-  },
   extends: [
     'prettier',
     'react-app',
     'react-app/jest',
-    'eslint:recommended',
     'plugin:node/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:storybook/recommended',
     'plugin:tailwindcss/recommended',
   ],
@@ -32,8 +25,8 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-
     'testing-library/prefer-screen-queries': 'off',
+    '@next/next/no-html-link-for-pages': 'off',
     '@typescript-eslint/no-unused-vars': [
       'warn',
       {
@@ -52,16 +45,9 @@ module.exports = {
     'import/order': [
       1,
       {
-        groups: [
-          'external',
-          'builtin',
-          'internal',
-          'sibling',
-          'parent',
-          'index',
-        ],
+        groups: ['external', 'builtin', 'internal', 'sibling', 'parent', 'index'],
         pathGroups: [
-          ...getDirectoriesToSort().map(singleDir => ({
+          ...getDirectoriesToSort().map((singleDir) => ({
             pattern: `${singleDir}/**`,
             group: 'internal',
           })),
@@ -90,15 +76,8 @@ module.exports = {
 };
 
 function getDirectoriesToSort() {
-  const ignoredSortingDirectories = [
-    '.git',
-    '.next',
-    '.vscode',
-    'node_modules',
-  ];
-  return getDirectories(process.cwd()).filter(
-    f => !ignoredSortingDirectories.includes(f)
-  );
+  const ignoredSortingDirectories = ['.git', '.next', '.vscode', 'node_modules'];
+  return getDirectories(process.cwd()).filter((f) => !ignoredSortingDirectories.includes(f));
 }
 
 function getDirectories(path) {

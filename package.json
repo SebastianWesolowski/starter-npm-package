@@ -29,21 +29,23 @@
     "test:watch": "jest --watch",
     "test": "jest --coverage",
     "typecheck": "tsc --noEmit",
+    "inprogres:start": "--------------",
+    "build:prod": "echo build:prod",
+    "inprogres:end": "--------------",
+    "GitHook:info:start": "GitHook--------------------------------------------------------------------------------------",
     "husky:prepare-commit-msg": "exec < /dev/tty && node_modules/.bin/git-cz --hook || true",
     "husky:pre-commit": "lint-staged -c ./.husky/lint-staged.config.json",
     "husky:pre-push": "run-s lint quality:check:* build:prod",
     "husky:commit-msg": "commitlint --edit $GIT_PARAMS",
-    "prepare": "husky install",
-    "inprogres:start": "--------------",
     "quality:check:type": "echo quality:check:type",
-    "build:prod": "echo build:prod",
-    "staged:style:fix": "echo staged:style:fix",
-    "staged:format:fix": "echo staged:format:fix",
-    "staged:lint:fix": "echo staged:lint:fix",
-    "staged:style:check": "echo staged:style:check",
-    "staged:format:check": "echo staged:format:check",
-    "staged:lint:check": "echo staged:lint:check",
-    "inprogres:end": "--------------"
+    "staged:style:check": "stylelint \"*.+(css|scss|sass)\" --allow-empty-input",
+    "staged:style:fix": "yarn style:check --fix",
+    "staged:format:check": "prettier --check --ignore-unknown",
+    "staged:format:fix": "yarn format:fix",
+    "staged:lint:check": "eslint --config .eslintrc.js",
+    "staged:lint:fix": "yarn lint:check --fix",
+    "prepare": "husky install",
+    "GitHook:info:end": "GitHook-End----------------------------------------------------------------------------"
   },
   "repository": {
     "type": "git",
@@ -100,6 +102,8 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.4.0",
+    "react": "^18",
+    "react-dom": "^18",
     "sass": "^1.69.3",
     "semantic-release": "^21.0.1",
     "style-loader": "^3.3.3",
@@ -115,14 +119,11 @@
     "tailwindcss": "^3.3.3",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
-    "typescript": "^4.2.4"
+    "typescript": "5.2.2"
   },
   "config": {
     "commitizen": {
       "path": "git-cz"
     }
-  },
-  "lint-staged": {
-    "*.ts": "eslint --cache --cache-location .eslintcache --fix"
   }
 }

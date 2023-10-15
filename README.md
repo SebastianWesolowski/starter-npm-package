@@ -23,9 +23,9 @@ npm install PLACEHOLDER_REPO_NAME
 ## Usage
 
 ```ts
-import { myPackage } from 'PLACEHOLDER_REPO_NAME';
+import { myPackage } from "PLACEHOLDER_REPO_NAME";
 
-myPackage('hello');
+myPackage("hello");
 //=> 'hello from my package'
 ```
 
