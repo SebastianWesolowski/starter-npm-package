@@ -12,9 +12,9 @@ NPM_USER="johnsmith"
 
 Add permission to edit `chmod +x ./customize.sh` and rund it `./customize.sh`
 
-### Add Tokens for NPM(**Automation**), Github, CodeCov
+### Add Tokens for NPM(**Automation**), Github
 
-Add your npm token to your GitHub repository secrets as `NPM_TOKEN`, `GH_TOKEN` and `CODECOV_TOKEN`
+Add your npm token to your GitHub repository secrets as `NPM_TOKEN`, `GH_TOKEN` 
 
 - Set `GH_TOKEN` - https://github.com/settings/tokens/new
 
@@ -32,6 +32,14 @@ https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/settings/action
 Read and write permissions
 
 ![gh.png](gh.png)
+
+### Set Code scanning
+on github repo Settings -> Security -> Code security and analysis.
+**!!! You have to use open source/public repositories**
+
+![codeScanning.png](codeScanning.png)
+https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/settings/actions
+
 
 ### Add Codecov integration
 
