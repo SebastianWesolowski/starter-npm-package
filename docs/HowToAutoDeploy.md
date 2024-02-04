@@ -33,14 +33,9 @@ Read and write permissions
 
 ![gh.png](gh.png)
 
-### Set Code scanning
-on github repo Settings -> Security -> Code security and analysis.
-**!!! You have to use open source/public repositories**
+### Before final publish
 
-![codeScanning.png](codeScanning.png)
-https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/settings/actions
+remove unnecessary files:
 
 
-### Add Codecov integration
-
-Enable the Codecov GitHub App [here](https://github.com/apps/codecov).
+Add permission to edit `chmod +x ./cleanCustomize.sh` and rund it `./cleanCustomize.sh`

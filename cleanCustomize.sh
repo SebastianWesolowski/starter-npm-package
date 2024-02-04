@@ -18,6 +18,7 @@ remove_files_in_directory() {
 
 remove_file "customize.sh"
 remove_file "customize.sh.example"
+remove_file "cleanCustomize.sh"
 remove_files_in_directory "docs"
 
 echo "Usunięto pliki."
