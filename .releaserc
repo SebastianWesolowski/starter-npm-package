@@ -68,7 +68,7 @@
     [
       '@semantic-release/exec',
       {
-        "prepareCmd": 'echo "Preparing release" && yarn build'
+        "prepareCmd": 'echo "Preparing release" && yarn build:prod'
       },
     ],
   ]

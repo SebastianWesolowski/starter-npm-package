@@ -10,6 +10,7 @@ remove_files_in_directory() {
 
   if [ -d "$directory" ]; then
     find "$directory" -type f -delete
+    remove_file "$directory"
     echo "Usunięto pliki w katalogu $directory i jego podkatalogach."
   else
     echo "Katalog $directory nie istnieje."

@@ -16,6 +16,9 @@ sed -i.mybak "s/PLACEHOLDER_GITHUB_USER/$GITHUB_USER/g" package.json
 sed -i.mybak "s/18.18.0/$NODE_VERSION/g" package.json
 sed -i.mybak "s/PLACEHOLDER_REPO_NAME/$REPO_NAME/g" package.json
 sed -i.mybak "s/PLACEHOLDER_FULL_NAME/$FULL_NAME/g" package.json
+sed -i.mybak "s/A template for creating npm packages using TypeScript/$REPO_NAME is npm package to .../g" package.json
+awk '/"keywords":/,/],/{if(!/],/){next};sub(/"keywords":.*\[/,"");print}' "package.json" > "package.json.tmp" && mv "package.json.tmp" "package.json"
+
 
 # Edit the ./.nvmrc file
 sed -i.mybak "s/PLACEHOLDER_NODE/$NODE_VERSION/g" .nvmrc
@@ -35,6 +38,8 @@ sed -i.mybak "s/PLACEHOLDER_NPM_USER/$NPM_USER/g" ./docs/HowToAutoDeploy.md
 
 rm *.mybak
 rm .*.mybak
+rm **/*.mybak
+rm .**/*.mybak
 
 # Display a message upon completion
 echo "Finished editing files."

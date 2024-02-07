@@ -18,6 +18,10 @@
 5. [WayToWrok](WayToWrok.md)
   - [How work with branch](#How-work-with-branch)
 
+6. [known problems](knownProblem.md)
+
+
+
 ### Set up your repository
 
 Replace `FULL_NAME`, `GITHUB_USER`, `NODE_VERSION` and `REPO_NAME` in the `./customize.sh` script with your own details to personalize your new package:
@@ -37,13 +41,12 @@ Add permission to edit `chmod +x ./customize.sh` and rund it `./customize.sh`
 Add your npm token to your GitHub repository secrets as `NPM_TOKEN`, `GH_TOKEN` 
 
 - Set `GH_TOKEN` - https://github.com/settings/tokens/new
-
-Add it on https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/settings/secrets/actions as new repo secret
-
 - Set `NPM_TOKEN`, set automation type - https://www.npmjs.com/settings/PLACEHOLDER_NPM_USER/tokens/new
   ![npm.png](npm.png)
+  
 
-- Add it on https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/settings/secrets/actions as new repo secret
+- in Repository secrets Add `GH_TOKEN` and `NPM_TOKEN` it on https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/settings/secrets/actions as new repo secret
+  ![actions-secrets.png](actions-secrets.png)
 
 ### Setup repository
 
@@ -52,6 +55,10 @@ https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/settings/action
 Read and write permissions
 
 ![gh.png](gh.png)
+
+### Start publish
+
+start publish from dev brnach !
 
 ### Before final publish
 
