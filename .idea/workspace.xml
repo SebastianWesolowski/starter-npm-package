@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4e43c6-098c-4bad-9845-8c2c513c32cc" name="Changes" comment="improveg">
-      <change afterPath="$PROJECT_DIR$/docs/actions-secrets.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/cz-problem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/knowProblems.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/pr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/pr.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customize.example.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customize.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.releaserc" beforeDir="false" afterPath="$PROJECT_DIR$/.releaserc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cleanCustomize.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cleanCustomize.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customize.sh" beforeDir="false" afterPath="$PROJECT_DIR$/customize.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/HowToAutoDeploy.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/HowToAutoDeploy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +26,10 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2WOpRzsbRupz0Sh2XA0ecFLdL71" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -50,7 +47,7 @@
     "WebServerToolWindowFactoryState": "false",
     "code.cleanup.on.save": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/sebastian/web/@s-starters/starter-npm-package/.github",
+    "last_opened_file_path": "/Users/sebastian/web/@s-starters/starter-npm-package",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,20 +56,29 @@
     "prettierjs.PrettierConfiguration.Package": "/Users/sebastian/web/@s-starters/starter-npm-package/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "/Users/sebastian/web/@s-starters/starter-npm-package/node_modules/typescript/lib"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/srcReadme" />
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/.github" />
       <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/src/styles" />
-      <recent name="$PROJECT_DIR$/docs" />
-      <recent name="$PROJECT_DIR$/.github/workflows" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tools" />
+      <recent name="$PROJECT_DIR$/srcReadme" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/docs/srcReadme" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/docs" />
-      <recent name="$PROJECT_DIR$/.github" />
     </key>
   </component>
   <component name="RunManager" selected="npm.style:check">
@@ -165,7 +171,8 @@
       <workItem from="1707058390277" duration="7971000" />
       <workItem from="1707125281098" duration="4164000" />
       <workItem from="1707222826705" duration="4988000" />
-      <workItem from="1707292234387" duration="1983000" />
+      <workItem from="1707292234387" duration="3310000" />
+      <workItem from="1707412005328" duration="3920000" />
     </task>
     <task id="LOCAL-00001" summary="improve">
       <option name="closed" value="true" />

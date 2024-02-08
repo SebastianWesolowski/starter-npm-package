@@ -1,16 +1,24 @@
 ---
-Remove after first publish [Set up your repository](docs/HowToAutoDeploy.md)
+Remove after first publish 
 ---
-
 # PLACEHOLDER_REPO_NAME
 
-[![npm package][npm-img]][npm-url]
-[![Build Status][build-img]][build-url]
-[![Downloads][downloads-img]][downloads-url]
-[![Issues][issues-img]][issues-url]
-[![Code Coverage][codecov-img]][codecov-url]
-[![Commitizen Friendly][commitizen-img]][commitizen-url]
-[![Semantic Release][semantic-release-img]][semantic-release-url]
+<img align="left" width="440" height="180" alt="PLACEHOLDER_REPO_NAME package" src="srcReadme/heroImageReposytory.png">
+
+## Important Links
+
+- [![npm package][npm-img]][npm-url]
+- [![Build Status][build-img]][build-url]
+- [Author page](PLACEHOLDER_PAGE_AUTHOR)
+
+<br>
+
+**Remove before final release**
+- [Set up your repository](docs/HowToAutoDeploy.md)
+- [Way to work](docs/WayToWrok.md)
+- [Known issues](docs/knowProblems.md)
+
+
 
 > My awesome module
 
@@ -50,6 +58,13 @@ Default: `rainbows`
 
 Lorem ipsum.
 
+## Badges
+[![Downloads][downloads-img]][downloads-url]
+[![Issues][issues-img]][issues-url]
+[![Commitizen Friendly][commitizen-img]][commitizen-url]
+[![Semantic Release][semantic-release-img]][semantic-release-url]
+
+
 [build-img]: https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/actions/workflows/release.yml/badge.svg
 [build-url]: https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/actions/workflows/release.yml
 [downloads-img]: https://img.shields.io/npm/dt/PLACEHOLDER_REPO_NAME
@@ -58,8 +73,6 @@ Lorem ipsum.
 [npm-url]: https://www.npmjs.com/package/PLACEHOLDER_REPO_NAME
 [issues-img]: https://img.shields.io/github/issues/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME
 [issues-url]: https://github.com/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/issues
-[codecov-img]: https://codecov.io/gh/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME/branch/main/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/PLACEHOLDER_GITHUB_USER/PLACEHOLDER_REPO_NAME
 [semantic-release-img]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release-url]: https://github.com/semantic-release/semantic-release
 [commitizen-img]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg

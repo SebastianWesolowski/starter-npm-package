@@ -1,8 +1,8 @@
 # Table of Contents
 
 1. [Set up your repository](#set-up-your-repository)
-  - [Replace Details in customize.sh](#replace-details-in-customizesh)
-  - [Add Permissions and Run customize.sh](#add-permissions-and-run-customizesh)
+  - [Replace Details in tools/customize.json](#replace-details-in-customizesh)
+  - [Add Permissions and Run tools/customize.sh](#add-permissions-and-run-customizesh)
 
 2. [Add Tokens for NPM and Github](#add-tokens-for-npm-and-github)
   - [Set GH_TOKEN](#set-gh_token)
@@ -13,7 +13,7 @@
 
 4. [Before Final Publish](#before-final-publish)
   - [Remove Unnecessary Files](#remove-unnecessary-files)
-  - [Add Permissions and Run cleanCustomize.sh](#add-permissions-and-run-cleancustomizesh)
+  - [Add Permissions and Run tools/cleanCustomize.sh](#add-permissions-and-run-cleancustomizesh)
 
 5. [WayToWrok](WayToWrok.md)
   - [How work with branch](#How-work-with-branch)
@@ -24,7 +24,7 @@
 
 ### Set up your repository
 
-Replace `FULL_NAME`, `GITHUB_USER`, `NODE_VERSION` and `REPO_NAME` in the `./customize.sh` script with your own details to personalize your new package:
+Replace variable in the `./tools/customize.json` script with your own details to personalize your new package:
 
 ```bash
 FULL_NAME="John Smith"
@@ -34,7 +34,9 @@ NODE_VERSION="18.17.1"
 NPM_USER="johnsmith"
 ```
 
-Add permission to edit `chmod +x ./customize.sh` and rund it `./customize.sh`
+or look on example in `./tools/customize.example.json`
+
+Add permission to edit `chmod +x ./tools/customize.sh` and rund it `./tools/customize.sh`
 
 ### Add Tokens for NPM(**Automation**), Github
 
@@ -65,4 +67,4 @@ start publish from dev brnach !
 remove unnecessary files:
 
 
-Add permission to edit `chmod +x ./cleanCustomize.sh` and rund it `./cleanCustomize.sh`
+Add permission to edit `chmod +x ./tools/cleanCustomize.sh` and rund it `./tools/cleanCustomize.sh`
