@@ -61,6 +61,7 @@ replace_in_file "20.11.0" "$NODE_VERSION" "package.json"
 replace_in_file "PLACEHOLDER_NODE_VERSION" "$NODE_VERSION" ".nvmrc"
 replace_in_file "PLACEHOLDER_NODE_VERSION" "$NODE_VERSION" ".github/nodejs.version"
 
+replace_in_file "placeholder-repo-name" "$REPO_NAME" "package.json"
 replace_in_file "PLACEHOLDER_REPO_NAME" "$REPO_NAME" "package.json"
 replace_in_file "A template for creating npm packages using TypeScript" "$REPO_NAME is npm package to ..." "package.json"
 replace_in_file "PLACEHOLDER_REPO_NAME" "$REPO_NAME" "README.md"
