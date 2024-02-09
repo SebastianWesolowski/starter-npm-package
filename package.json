@@ -107,7 +107,7 @@
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^5.2.1",
     "tailwindcss": "^3.3.3",
-    "ts-jest": "^27.0.5",
+    "ts-jest": "28.0.8",
     "ts-node": "^10.2.1",
     "typescript": "5.2.2"
   },
@@ -115,5 +115,8 @@
     "commitizen": {
       "path": "git-cz"
     }
+  },
+  "dependencies": {
+    "jest-scss-transform": "^1.0.3"
   }
 }

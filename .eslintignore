@@ -8,3 +8,4 @@ dist/*
 .husky/lint-staged.config.json
 .stylelintrc.js
 package.json
+tsconfig.json
