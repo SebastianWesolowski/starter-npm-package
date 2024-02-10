@@ -19,7 +19,7 @@ remove_files_in_directory() {
 
 remove_file "tools/customize.sh"
 remove_file "tools/customize.json"
-remove_file "tools/customize.json.example"
+remove_file "tools/customize.example.json"
 remove_file "tools/cleanCustomize.sh"
 remove_files_in_directory "docs"
 

@@ -1,7 +1,7 @@
 {
   "name": "placeholder-repo-name",
   "version": "0.0.0-development",
-  "version-SNP": "1.0.0",
+  "version-SNP": "1.0.1",
   "description": "A template for creating npm packages using TypeScript",
   "main": "./lib/index.js",
   "files": [
