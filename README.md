@@ -1,6 +1,6 @@
 # PLACEHOLDER_REPO_NAME
 
-<img align="left" width="440" height="180" alt="PLACEHOLDER_REPO_NAME package" src="srcReadme/heroImageReposytory.png">
+<a href="https://github.com/SebastianWesolowski/starter-npm-package"><img align="left" width="440" height="180" alt="PLACEHOLDER_REPO_NAME package" src="srcReadme/heroImageReposytory.png"></a>
 
 ## Important Links
 

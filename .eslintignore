@@ -5,7 +5,7 @@ lib/*
 *.scss
 .storybook/**
 dist/*
-.husky/lint-staged.config.json
+.husky
 .stylelintrc.js
 package.json
 tsconfig.json

@@ -3,6 +3,14 @@ const fs = require('fs');
 
 module.exports = {
   plugins: ['@typescript-eslint', 'node', 'prettier'],
+  "overrides": [
+    {
+      "files": ["**/*.json"],
+      "rules": {
+        quotes: ['warn', 'double', { avoidEscape: true }],
+      }
+    }
+  ],
   extends: [
     'prettier',
     'react-app',
