@@ -56,6 +56,7 @@ replace_in_file "PLACEHOLDER_PAGE_AUTHOR" "$PAGE_AUTHOR" "package.json"
 replace_in_file "PLACEHOLDER_GITHUB_USER" "$GITHUB_USER" "package.json"
 replace_in_file "PLACEHOLDER_GITHUB_USER" "$GITHUB_USER" "README.md"
 replace_in_file "PLACEHOLDER_GITHUB_USER" "$GITHUB_USER" "./docs/HowToAutoDeploy.md"
+replace_in_file "PLACEHOLDER_GITHUB_USER" "$GITHUB_USER" ".github/FUNDING.yml"
 
 replace_in_file "20.11.0" "$NODE_VERSION" "package.json"
 replace_in_file "PLACEHOLDER_NODE_VERSION" "$NODE_VERSION" ".nvmrc"

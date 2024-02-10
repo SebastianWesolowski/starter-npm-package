@@ -1,6 +1,3 @@
----
-Remove after first publish 
----
 # PLACEHOLDER_REPO_NAME
 
 <img align="left" width="440" height="180" alt="PLACEHOLDER_REPO_NAME package" src="srcReadme/heroImageReposytory.png">
