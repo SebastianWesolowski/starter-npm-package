@@ -12,3 +12,4 @@ tsconfig.json
 prettier.config.js
 .eslintrc.js
 .replacerc.js
+clean-package.config.json

@@ -34,7 +34,9 @@
     "test:watch": "jest --watch",
     "typescript:check": "tsc --noEmit",
     "cm": "cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
   },
   "repository": {
     "type": "git",
@@ -73,6 +75,7 @@
     "@types/node": "^12.20.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.54.1",
+    "clean-package": "^2.2.0",
     "commitizen": "^4.3.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "cpy-cli": "^5.0.0",
