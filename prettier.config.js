@@ -1,12 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
+const sPrettier = require('s-prettier')
+
 module.exports = {
-  arrowParens: 'always',
-  endOfLine: 'auto',
-  jsxSingleQuote: true,
-  printWidth: 120,
-  semi: true,
-  singleQuote: true,
-  trailingComma: 'es5',
-  useTabs: false,
+  ...sPrettier,
   plugins: [require('prettier-plugin-tailwindcss')],
 };
