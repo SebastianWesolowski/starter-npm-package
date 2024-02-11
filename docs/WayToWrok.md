@@ -8,9 +8,17 @@ after release just install package.
 
 
 ### pre release
-send package to `dev` branch
+send package to `dev` branch~
 
 You can install packages to test with one of the following commands 
 
 `yarn add package-name@1.0.0-dev.1`
 `yarn add package-name@next`
+
+
+## update via commit
+
+Show differences between two commits
+`git diff --name-only 66096206^..74f700b1`
+ 
+or use tool/upload
