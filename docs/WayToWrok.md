@@ -16,6 +16,10 @@ You can install packages to test with one of the following commands
 `yarn add package-name@next`
 
 
+## check local preview package
+
+just use `build:package` and look at the folder dist/package
+
 ## update via commit
 
 Show differences between two commits
