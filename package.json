@@ -11,7 +11,6 @@
     "build": "run-s build:clean && tsc --project tsconfig.build.json",
     "build:clean": "rm -rf ./lib/",
     "build:prod": "run-s build && cpy 'src/index.json' 'lib' --parents",
-    "cm": "cz",
     "eslint:check": "eslint --no-error-on-unmatched-pattern './src/**/*.+(js|jsx|ts|tsx)'",
     "eslint:fix": "eslint --no-error-on-unmatched-pattern './src/**/*.+(js|jsx|ts|tsx)' --fix",
     "husky:commit-msg": "commitlint --edit $GIT_PARAMS",
@@ -21,7 +20,6 @@
     "lint": "run-s lint:fix lint:check",
     "lint:check": "run-s prettier:check eslint:check style:check typescript:check",
     "lint:fix": "run-s prettier:fix eslint:fix style:fix",
-    "prepare": "husky install",
     "prettier:check": "prettier --check '**/*.{js,jsx,ts,tsx,json}'",
     "prettier:fix": "prettier --write '**/*.{js,jsx,ts,tsx,json}'",
     "staged:lint:check": "eslint",
@@ -34,7 +32,9 @@
     "style:fix": "stylelint './src/**/*.+(css|scss|sass)' --fix",
     "test:check": "jest --coverage",
     "test:watch": "jest --watch",
-    "typescript:check": "tsc --noEmit"
+    "typescript:check": "tsc --noEmit",
+    "cm": "cz",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",

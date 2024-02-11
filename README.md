@@ -15,9 +15,11 @@
 - [Way to work](docs/WayToWrok.md)
 - [Known issues](docs/knowProblems.md)
 
+---
 
+<br/>
 
-> My awesome module
+A template for creating npm packages using TypeScript
 
 ## Install
 

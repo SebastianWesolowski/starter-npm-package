@@ -21,6 +21,7 @@ remove_file "tools/customize.sh"
 remove_file "tools/customize.json"
 remove_file "tools/customize.example.json"
 remove_file "tools/cleanCustomize.sh"
+remove_file "todo.md"
 remove_files_in_directory "docs"
 
 echo "Deleted files."

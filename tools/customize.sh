@@ -65,6 +65,7 @@ replace_in_file "PLACEHOLDER_NODE_VERSION" "$NODE_VERSION" ".github/nodejs.versi
 replace_in_file "placeholder-repo-name" "$REPO_NAME" "package.json"
 replace_in_file "PLACEHOLDER_REPO_NAME" "$REPO_NAME" "package.json"
 replace_in_file "A template for creating npm packages using TypeScript" "$REPO_NAME is npm package to ..." "package.json"
+replace_in_file "A template for creating npm packages using TypeScript" "$REPO_NAME is npm package to ..." "README.md"
 replace_in_file "PLACEHOLDER_REPO_NAME" "$REPO_NAME" "README.md"
 replace_in_file "PLACEHOLDER_REPO_NAME" "$REPO_NAME" "./docs/HowToAutoDeploy.md"
 

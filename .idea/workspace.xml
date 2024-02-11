@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe4e43c6-098c-4bad-9845-8c2c513c32cc" name="Changes" comment="improveg">
+      <change afterPath="$PROJECT_DIR$/todo.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +171,8 @@
       <workItem from="1707292234387" duration="3310000" />
       <workItem from="1707412005328" duration="7007000" />
       <workItem from="1707487773815" duration="3886000" />
-      <workItem from="1707587513267" duration="4252000" />
+      <workItem from="1707587513267" duration="5770000" />
+      <workItem from="1707659403727" duration="2493000" />
     </task>
     <task id="LOCAL-00001" summary="improve">
       <option name="closed" value="true" />
