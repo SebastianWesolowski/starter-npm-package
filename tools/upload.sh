@@ -5,9 +5,12 @@
 #"1.0.1" - 2e8650db
 #"1.0.2" - 66096206
 
+first_commit=66096206 # 1.0.2
+second_commit=cf263737 # current
+
 # Pobierz tagi dla pierwszego i drugiego commita
-tag_first_commit=$(git describe --tags --abbrev=0 66096206) # 1.0.2
-tag_second_commit=$(git describe --tags --abbrev=0 74f700b1) # current
+tag_first_commit=$(git describe --tags --abbrev=0 $first_commit) # 1.0.2
+tag_second_commit=$(git describe --tags --abbrev=0 $second_commit) # current
 
 # Sprawdź, czy tag drugiego commita jest taki sam jak tag pierwszego
 if [ "$tag_first_commit" = "$tag_second_commit" ]; then
@@ -21,7 +24,7 @@ if [ ! -d "upload" ]; then
 fi
 
 # Wykonaj diff i skopiuj pliki
-git diff --name-only 66096206^..74f700b1 | while read file; do
+git diff --name-only $first_commit^..$second_commit | while read file; do
     # Utwórz archiwum ZIP i dodaj pliki do niego
     zip -r "upload/SNP-$tag_first_commit-$tag_second_commit.zip" "$file"
 
