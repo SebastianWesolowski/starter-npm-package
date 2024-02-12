@@ -4,9 +4,10 @@
 #"1.0.0" - 8137fe4b
 #"1.0.1" - 2e8650db
 #"1.0.2" - 66096206
+#"1.0.3" - 067b86de
 
 first_commit=66096206 # 1.0.2
-second_commit=cf263737 # current
+second_commit=067b86de # current
 
 # Pobierz tagi dla pierwszego i drugiego commita
 tag_first_commit=$(git describe --tags --abbrev=0 $first_commit) # 1.0.2
