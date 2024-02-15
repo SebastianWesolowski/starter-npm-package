@@ -1,5 +1,6 @@
-import fs, { access, mkdir, writeFile } from 'fs';
+import fs from 'fs';
 import { basename, dirname, join } from 'path';
+
 interface CreateFileParams {
   filePath?: string;
   folderPath?: string;
@@ -20,59 +21,56 @@ export async function createFile({ filePath, fileName, folderPath, content }: Cr
   }
 
   try {
-    if (!(await folderExists(folderPath))) {
-      await createFolder(folderPath);
+    await ensureFolderExists(folderPath);
+
+    if (await isFileExists(filePath)) {
+      console.warn('File already exists: ' + filePath);
     }
 
-    if (await fileExists(filePath)) {
-      throw new Error('File already exists: ' + filePath);
-    }
-
-    if (await writeNewFile(filePath, content)) {
-      return filePath;
-    }
+    return await writeNewFile(filePath, content);
   } catch (error) {
-    console.log(error);
+    console.error(error);
     return '';
   }
-  return '';
 }
 
-async function writeNewFile(filePath: string, content: string | Buffer): Promise<string | null> {
-  try {
-    writeFile(filePath, content, () => {
-      return filePath;
-    });
-  } catch (error) {
-    return null;
+async function handleCallback(err: NodeJS.ErrnoException | null): Promise<void> {
+  if (err) {
+    console.log(`error: ${err.message}`);
   }
-  return null;
 }
 
-async function folderExists(folderPath: string): Promise<boolean> {
+async function writeNewFile(filePath: string, content: string | Buffer): Promise<string> {
   try {
-    access(folderPath, (isExist) => {
-      return isExist;
-    });
+    fs.writeFile(filePath, content, (err) => handleCallback(err));
+    return filePath;
+  } catch (error) {
+    return '';
+    console.error(error);
+  }
+}
+
+async function ensureFolderExists(folderPath: string): Promise<void> {
+  try {
+    fs.mkdir(folderPath, { recursive: true }, (err) => handleCallback(err));
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+async function isFileExists(filePath: string): Promise<boolean> {
+  try {
+    await fs.promises.access(filePath); // Użyj fs.promises.access lub obsłuż callback
     return true;
   } catch (error) {
     return false;
   }
 }
 
-async function createFolder(folderPath: string): Promise<void> {
-  mkdir(folderPath, { recursive: true }, (er) => {
-    console.log(er);
-  });
-}
-
-async function fileExists(filePath: string): Promise<boolean> {
-  try {
-    if (!fs.existsSync(filePath)) {
-      return false;
-    }
-  } catch (error) {
-    return true;
-  }
-  return false;
+try {
+  const result = createFile({ filePath: './snp/test/readme.md', content: 'lorem ipsum dolor' });
+  // Handle the result here
+} catch (error) {
+  console.log(error);
+  // Handle errors here
 }

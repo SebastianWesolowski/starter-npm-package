@@ -119,7 +119,9 @@ dist
 .pnp.*
 
 # Tests
-./test/**/*
+test/**/*
+!test/**/*.spec.ts
+
 # Compiled code
 lib/
 
