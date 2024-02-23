@@ -2,7 +2,7 @@ import { createFile } from '../snp/util/createFile'; // Replace with the actual 
 
 describe('createFile', () => {
   it('should create a file when given filePath and content', async () => {
-    const filePath = 'test/to/file.txt';
+    const filePath = 'test/testFiles/file.txt';
     const content = 'Hello, this is the content.';
     const result = await createFile({ filePath, content });
     expect(result).toBe(filePath);
@@ -10,7 +10,7 @@ describe('createFile', () => {
   });
 
   it('should create a file when given folderPath, fileName, and content', async () => {
-    const folderPath = 'test/to';
+    const folderPath = 'test/testFiles';
     const fileName = 'file.txt';
     const content = 'Hello, this is the content.';
     const result = await createFile({ folderPath, fileName, content });
@@ -26,7 +26,7 @@ describe('createFile', () => {
   });
 
   it('should log a warning and return the file path if the file already exists', async () => {
-    const existingFilePath = 'test/to/existingFile.txt';
+    const existingFilePath = 'test/testFiles/existingFile.txt';
     const existingContent = 'Existing file content';
 
     // Create an existing file

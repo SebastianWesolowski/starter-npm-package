@@ -9,6 +9,8 @@
     "CHANGELOG.md"
   ],
   "scripts": {
+
+    "start:dev": "nodemon --watch \"snp/**\" --ext \"ts,json\" --ignore \"snp/**/*.spec.ts\" --exec \"ts-node snp/index.ts\"",
     "build": "run-s build:clean && tsc --project tsconfig.build.json",
     "build:clean": "rm -rf ./lib/",
     "build:prod": "run-s build && cpy 'src/index.json' 'lib' --parents",
